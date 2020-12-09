@@ -1,0 +1,80 @@
+package cobacoba;
+import java.util.Scanner;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class belajar1 {
+    
+    
+    public static void main(String[] args) {
+        
+        String data;
+        char masuk;
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Daftar huruf vokal : a,i,u,e,o");
+        System.out.println("Daftar huruf konsonan : b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,y,z");
+        System.out.print("Masukkan kata yang anda pilih :: ");
+        masuk = input.next().charAt(0);
+        
+        if(masuk=='a'||masuk=='i'||masuk=='u'||masuk=='o'){    
+            if(masuk == 'a'){
+                System.out.println(" "+'\u0627');   //a
+            }else if(masuk == 'i'){
+                System.out.println(" "+'\u0627'+'\u064A');  //i
+            }else if(masuk == 'u'){
+                System.out.println(" "+'\u0627'+'\u0648');  //u
+            }else if(masuk == 'o'){
+                System.out.println(" "+'\u0627'+'\u0648');  //o
+            }else if(masuk == 'e'){
+                System.out.println(" "+'\u0627'+'\u064A');  //e
+            }
+        }else if(masuk=='b'||masuk == 'c'||masuk == 'd'||masuk == 'f'||masuk == 'g'||masuk=='h'||masuk=='j'||masuk=='k'||masuk == 'l'||masuk == 'm'||masuk == 'n'||masuk == 'm'||masuk == 'n'||masuk == 'p'||masuk == 'q'||masuk == 'r'||masuk == 's'||masuk == 't'||masuk == 'v'||masuk == 'w'||masuk == 'x'||masuk == 'y'||masuk == 'z'){
+            if(masuk == 'b'){
+                System.out.println(" "+'\u0628');   //b
+            }else if(masuk == 'c'){
+                System.out.println(" "+'\u0686');   //c
+            }else if(masuk == 'd'){
+                System.out.println(" "+'\u062F');   //d
+            }else if(masuk == 'f'){
+                System.out.println(" "+'\u0641');   //f
+            }else if(masuk == 'g'){
+                System.out.println(" "+'\u06AC');   //g
+            }else if(masuk == 'h'){
+                System.out.println(" "+'\u06BE');   //h
+            }else if(masuk == 'j'){
+                System.out.println(" "+'\u062C');   //j
+            }else if(masuk == 'k'){
+                System.out.println(" "+'\u0643');   //k
+            }else if(masuk == 'l'){
+                System.out.println(" "+'\u0644');   //l
+            }else if(masuk == 'm'){
+                System.out.println(" "+'\u0645');   //m
+            }else if(masuk == 'n'){
+                System.out.println(" "+'\u0646');   //n
+            }else if(masuk == 'p'){
+                System.out.println(" "+'\u06A4');   //p
+            }else if(masuk == 'q'){
+                System.out.println(" "+'\u0642');   //q
+            }else if(masuk == 'r'){
+                System.out.println(" "+'\u0631');   //r
+            }else if(masuk == 's'){
+                System.out.println(" "+'\u0633');   //s
+            }else if(masuk == 't'){
+                    System.out.println(" "+'\u062A');   //t
+            }else if(masuk == 'v'){
+                System.out.println(" "+'\u06CF');   //v
+            }else if(masuk == 'x'){
+                System.out.println(" "+'\u0643'+'\u0633');   //x
+            }else if(masuk == 'y'){
+                System.out.println(" "+'\u064A');   //y
+            }else if(masuk == 'w'){
+                System.out.println(" "+'\u0648');   //w
+            }else if(masuk == 'z'){
+                    System.out.println(" "+'\u0632');   //z
+                }
+        }else{
+                System.out.println("Masukkan tidak sesuai .... ");
+        }
+    }
+}
