@@ -1,0 +1,44 @@
+package cobacoba;
+
+import java.util.Scanner;
+
+public class belajarlagii {
+    public static void main(String[] args) {
+        System.out.println("Masukkan kalimat yang anda inginkan :: ");
+        Scanner input = new Scanner(System.in);
+        String data = input.nextLine();
+        System.out.println();
+        
+        System.out.println("Hasil pemisah kalimat :. ");
+        String[] masukan = data.split("\\s+");
+        for(String masuk : masukan){
+            System.out.println("Hasil pemisah suku kata :. ");
+            
+            String[] ujidata1 = masuk.split("(?<=\\G.[a])");
+            for(String ujimasuk1 : ujidata1){
+                System.out.println(""+ujimasuk1);
+            }
+            
+            String[] ujidata2 = masuk.split("(?<=\\G.[i])");
+            for(String ujimasuk2 : ujidata2){
+                System.out.println(""+ujimasuk2);
+            }
+            
+            String[] ujidata3 = masuk.split("(?<=\\G.[u])");
+            for(String ujimasuk3 : ujidata3){
+                System.out.println(""+ujimasuk3);
+            }
+            
+            String[] ujidata4 = masuk.split("(?<=\\G.[e])");
+            for(String ujimasuk4 : ujidata4){
+                System.out.println(""+ujimasuk4);
+            }
+            
+            String[] ujidata5 = masuk.split("(?<=\\G.[o])");
+            for(String ujimasuk5 : ujidata5){
+                System.out.println(""+ujimasuk5);
+            }
+        }
+        
+    }
+}
